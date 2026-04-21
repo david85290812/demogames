@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演示游戏集合 - Games for Demo</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Nunito", "PingFang SC", "Microsoft YaHei", sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(155deg, #a8d8f0 0%, #c8eaf8 28%, #dff2fc 50%, #fdf6e8 74%, #fdecc8 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #4a6090;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.6);
+            border: 3.5px solid rgba(200, 185, 155, 0.5);
+            border-radius: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: #4a6090;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            border-color: rgba(100, 160, 220, 0.6);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+            background: rgba(255, 255, 255, 0.85);
+        }
+        .card:active {
+            transform: scale(0.98);
+        }
+        .card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .card .title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 0.9rem;
+            color: #7c6030;
+            opacity: 0.8;
+        }
+        .footer {
+            margin-top: 60px;
+            color: rgba(90, 70, 40, 0.6);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>演示游戏集合</h1>
+    
+    <div class="grid">
+        <a href="Q1_听音选图.html" class="card">
+            <div class="icon">🎧</div>
+            <div class="title">Q1: 听音选图</div>
+            <div class="desc">Listen and click the correct picture!</div>
+        </a>
+        <a href="Q2_补全句子.html" class="card">
+            <div class="icon">✍️</div>
+            <div class="title">Q2: 补全句子</div>
+            <div class="desc">Complete the sentences correctly!</div>
+        </a>
+        <a href="Q3_听音选图.html" class="card">
+            <div class="icon">🎨</div>
+            <div class="title">Q3: 听音选图</div>
+            <div class="desc">Another listening challenge!</div>
+        </a>
+        <a href="Q4_补全句子.html" class="card">
+            <div class="icon">📖</div>
+            <div class="title">Q4: 补全句子</div>
+            <div class="desc">Fill in the blanks!</div>
+        </a>
+        <a href="Q5_动物匹配.html" class="card">
+            <div class="icon">🦁</div>
+            <div class="title">Q5: 动物匹配</div>
+            <div class="desc">Match the animals with their names!</div>
+        </a>
+        <a href="Q6_听音选图.html" class="card">
+            <div class="icon">🎤</div>
+            <div class="title">Q6: 听音选图</div>
+            <div class="desc">Listen and pick the right one!</div>
+        </a>
+        <a href="Q7_补全句子.html" class="card">
+            <div class="icon">📝</div>
+            <div class="title">Q7: 补全句子</div>
+            <div class="desc">Sentence building practice!</div>
+        </a>
+        <a href="Q8_找词.html" class="card">
+            <div class="icon">🔍</div>
+            <div class="title">Q8: 找词</div>
+            <div class="desc">Find the hidden words!</div>
+        </a>
+    </div>
+
+    <div class="footer">
+        Created with ❤️ for young learners.
+    </div>
+</body>
+</html>
