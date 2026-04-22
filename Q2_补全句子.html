@@ -14,7 +14,7 @@
   }
   body {
     background:
-      radial-gradient(ellipse at top, #b3e5fc 0%, #e1f5fe 40%, #fff3e0 70%, #ffe0b2 100%);
+      linear-gradient(180deg, #e0f4ff 0%, #c8ecf8 28%, #d8f0c4 62%, #b8e4a8 100%);
     position: relative;
   }
 
@@ -412,7 +412,7 @@
     el.style.position='absolute';
     el.style.left=sl+'px';
     el.style.top=st+'px';
-    document.getElementById('_scale_outer').style.background='#1a1a1a';
+    document.getElementById('_scale_outer').style.background='linear-gradient(180deg,#e0f4ff,#b8e4a8)';
   }
   function init(){
     var target=document.querySelector('.stage');
